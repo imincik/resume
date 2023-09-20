@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="ivan-minčík---imincik-devops-engineer">Ivan Minčík - <span
+class="citation" data-cites="imincik">@imincik</span>, DevOps
+Engineer</h1>
+<p>Email: ivan.mincik@gmail.com<br />
+Matrix: <span class="citation"
+data-cites="imincik:matrix.org">@imincik:matrix.org</span><br />
+Phone: +421 (0)907 639 570<br />
+</p>
+<hr />
+<dl>
+<dt>Education</dt>
+<dd>
+<ul>
+<li>Master’s degree, Geographical Information Systems at Matej Bel
+University, Faculty of Natural Science in Banská Bystrica, Slovakia
+(2001-2006)</li>
+</ul>
+</dd>
+<dt>Technology Stack</dt>
+<dd>
+<ul>
+<li>Git, Mercurial, SVN, GitHub</li>
+<li>Make, CMake</li>
+<li>GDAL, PROJ, QGIS, PostgreSQL/PostGIS, Django</li>
+<li>Python, Nix, Bash</li>
+<li>Debian/Ubuntu, NixOS</li>
+<li>Ansible</li>
+<li>Amazon Web Services (AWS)</li>
+<li>Docker, Podman, Nomad, Vagrant</li>
+<li>GitHub Actions, Jenkins, TravisCI</li>
+<li>Elasticsearch, Logstash, Grafana, Nagios</li>
+</ul>
+</dd>
+<dt>Open Source communities</dt>
+<dd>
+<ul>
+<li>Linux user since 1999</li>
+<li>OSGeo member since 2010</li>
+<li>OSGeo Charter member since 2014</li>
+<li>NixOS/Nixpkgs contributor since 2021</li>
+</ul>
+</dd>
+<dt>Languages</dt>
+<dd>
+<ul>
+<li>Slovak</li>
+<li>English<br />
+</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<h3 id="self-employed-devops-engineer">Self employed DevOps
+Engineer</h3>
+<p>Period: September 2022 - now</p>
+<p>Development of networking, server and desktop infrastructure using
+Nix and NixOS. Started Nix Geospatial team, Geonix project and
+participated in Summer of Nix program.<br />
+</p>
+<p><strong>Summer of Nix</strong></p>
+<ul>
+<li>Period: August 2023 - September 2023</li>
+<li>Description: paid Nix training and work program organized by NixOS
+Foundation and NLNet</li>
+<li>Responsibility: development</li>
+<li>Technologies: Nixpkgs, Nix, Nix Flakes</li>
+<li>URL: https://summer.nixos.org</li>
+</ul>
+<p><strong>NixOS based desktop and server solution for medical
+offices</strong></p>
+<ul>
+<li>Period: September 2022 - now</li>
+<li>Description: NixOS based networking, server and desktop solution for
+medical offices</li>
+<li>Responsibility: design, development and deployment</li>
+<li>Technologies: NixOS, Nix, Nix Flakes</li>
+</ul>
+<p><strong>Geonix</strong></p>
+<ul>
+<li>Period: October 2022 - now</li>
+<li>Description: cross-platform geospatial packages distribution and
+development environment</li>
+<li>Responsibility: project founder, design, development</li>
+<li>Technologies: Nixpkgs, Nix, Nix Flakes</li>
+<li>URL: https://github.com/imincik/geonix<br />
+<br />
+</li>
+</ul>
+<h3 id="geospatial-it-solutions-architect">Geospatial IT Solutions
+Architect,</h3>
+<h3 id="devops-engineer">DevOps Engineer,</h3>
+<h3 id="data-services-development-team-manager">Data Services
+Development Team Manager</h3>
+<h3 id="at-land-information-new-zealand">at Land Information New
+Zealand</h3>
+<p>Period: March 2016 - September 2022</p>
+<p>My main responsibility was to improve design and implementation of
+LINZ’s core data storage and data publishing infrastructure and help
+with transition of its software development culture in to a modern agile
+DevOps practices. As part of this job, I also improved many soft skills
+like communication and people management in government environment and
+multinational development teams.<br />
+</p>
+<p><strong>BDE Processor</strong></p>
+<ul>
+<li>Period: March 2016 - September 2022</li>
+<li>Description: New Zealand’s cadastral data publishing system</li>
+<li>Responsibility: redesign, development, migration to AWS,
+maintenance</li>
+<li>Technologies: Perl, Bash, Python, PostgreSQL, PL/PgSQL, AWS (S3,
+EC2, RDS, Lambda), Nix</li>
+</ul>
+<p><strong>LINZ Geostore</strong></p>
+<ul>
+<li>Period: January 2020 - December 2021</li>
+<li>Description: LINZ’s central storage for geospatial data</li>
+<li>Responsibility: design, development</li>
+<li>Technologies: Python, AWS (S3, Step Functions, Lambda), Nix</li>
+</ul>
+<p><strong>LINZ AWS Direct Connect</strong></p>
+<ul>
+<li>Period: 2016</li>
+<li>Description: private network connection between LINZ’s on-premise
+data centers and AWS</li>
+<li>Responsibility: design, development, deployment</li>
+<li>Technologies: AWS (Direct Connect)<br />
+<br />
+</li>
+</ul>
+<h3 id="self-employed-gis-consultant-and-devops-engineer">Self employed
+GIS Consultant and DevOps Engineer</h3>
+<p>Period: September 2014 - December 2015</p>
+<p>Geospatial technologies consulting services for multiple
+companies.<br />
+<br />
+</p>
+<h3 id="company-founder-and-cto-at-gista">Company founder and CTO at
+GISTA</h3>
+<p>Period: February 2008 - September 2014</p>
+<p>I started GISTA company with goal to introduce digital mapping in
+government organizations and municipalities in Slovakia. I designed and
+implemented database models, data transformation and data processing
+tools for geospatial data in Slovakia. I also designed web mapping
+interfaces for end users. Software from GISTA was successfully used in
+all large cities in Slovakia and in most of the middle size cities and
+towns.<br />
+</p>
+<p><strong>GIS.lab Web NG</strong></p>
+<ul>
+<li>Period: December 2015 - March 2016</li>
+<li>Description: new generation web and mobile maps publishing system
+based on QGIS</li>
+<li>Responsibility: project founder, project management,
+development</li>
+<li>Technologies: QGIS, OpenLayers 3, AngularJS, NodeJS, Onsen, Cordova,
+Django</li>
+</ul>
+<p><strong>Linux based desktop and server solution for medical
+offices</strong></p>
+<ul>
+<li>Period: August 2015</li>
+<li>Description: centrally managed, maintenance-free desktop solution
+for medical offices. Integration with other various medical applications
+and services.</li>
+<li>Responsibility: design, development and deployment</li>
+<li>Technologies: GIS.lab, Ubuntu Linux, VMware ESXi, Windows Server
+2008</li>
+</ul>
+<p><strong>GIS.lab Open Source project</strong></p>
+<ul>
+<li>Period: September 2013 - March 2016</li>
+<li>Description: GIS.lab is a free system for instant deployment of
+complete geospatial cluster with desktop, web and mobile client
+interfaces.</li>
+<li>Responsibility: project founder, lead developer</li>
+<li>URL: http://web.gislab.io</li>
+</ul>
+<p><strong>Spatial database management system for GISPLAN</strong></p>
+<ul>
+<li>Period: January 2010 - December 2010</li>
+<li>Description: system for geospatial data and metadata storage and
+history management</li>
+<li>Responsibility: design, development</li>
+<li>Technologies: PostgreSQL/PostGIS, PL/PgSQL, PL/Python, Django</li>
+</ul>
+<p><strong>GISPLAN Modeler project</strong></p>
+<ul>
+<li>Period: November 2009 - December 2012</li>
+<li>Description: framework for interactive geospatial analysis in web
+application using Web Processing Services</li>
+<li>Responsibility: project lead, design, development</li>
+<li>Technologies: PostgreSQL/PostGIS, Python, Django, jQuery, jQuery
+UI</li>
+<li>Project founder: Slovak Research and Development Agency</li>
+</ul>
+<p><strong>Geospatial solutions for local government</strong></p>
+<ul>
+<li>Period: January 2009 - December 2014</li>
+<li>Description: more than 50 specialized solutions for local government
+in Slovakia</li>
+<li>Responsibility: design, database model, map rendering, data import
+and conversion tools, deployment</li>
+<li>Technologies: GISPLAN, Python</li>
+</ul>
+<p><strong>Cloud service orchestration and management system for
+GISPLAN</strong></p>
+<ul>
+<li>Period: September 2009 - August 2010</li>
+<li>Description: tools for GISPLAN services orchestration and management
+in Amazon AWS cloud environment</li>
+<li>Responsibility: design, development</li>
+<li>Technologies: Bash, Python, Fabric</li>
+</ul>
+<p><strong>Web mapping framework GISPLAN</strong></p>
+<ul>
+<li>Period: September 2008 - December 2010</li>
+<li>Description: web mapping framework with user friendly web
+administration</li>
+<li>Responsibility: project lead, design, development</li>
+<li>Technologies: PostgreSQL/PostGIS, UMN Mapserver, Python, Django,
+jQuery, jQuery UI<br />
+<br />
+</li>
+</ul>
+<h3 id="self-employed-geospatial-solutions-developer">Self employed
+Geospatial Solutions Developer</h3>
+<p>Period: May 2000 - February 2008</p>
+<p>I designed and implemented web mapping solutions for national
+cadastral data and register of drainage and irrigation and multiple
+small geospatial data collection and transformation tools.<br />
+</p>
+<p><strong>Cadastral data information system</strong></p>
+<ul>
+<li>Period: January 2007 - December 2007</li>
+<li>Description: tools for data import, storage, visualization and
+querying of data provided by Slovak Cartography and Cadastral
+Authority</li>
+<li>Responsibility: design, database model, map rendering, development,
+deployment</li>
+<li>Technologies: PostgreSQL/PostGIS, Python, UMN Mapserver</li>
+</ul>
+<p><strong>National register of drainage and irrigation</strong></p>
+<ul>
+<li>Period: January 2006 - December 2006</li>
+<li>Description: complete Open Source geospatial solution for Slovak
+Authority for Drainage and Irrigation Management with web client
+interface and OWS services support</li>
+<li>Responsibility: design, database model, map rendering,
+deployment</li>
+<li>Technologies: PostgreSQL/PostGIS, UMN Mapserver, PHP, p.mapper</li>
+</ul>
+</body>
+</html>
