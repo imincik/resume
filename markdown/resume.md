@@ -18,13 +18,13 @@ Technology Stack
     * Git, Mercurial, SVN, GitHub 
     * Make, CMake
     * GDAL, PROJ, QGIS, PostgreSQL/PostGIS, Django
-    * Python, Nix, Bash
-    * Debian/Ubuntu, NixOS
+    * Python, Nix, Bash, Elm
+    * Debian/Ubuntu, NixOS Linux
     * Ansible
-    * Amazon Web Services (AWS)
-    * Docker, Podman, Nomad, Vagrant
-    * GitHub Actions, Jenkins, TravisCI
-    * Elasticsearch, Logstash, Grafana, Nagios
+    * Amazon Web Services (AWS), Terraform, CDK
+    * Docker, Podman, Nomad, Vagrant, K3S
+    * GitHub Actions, Jenkins, Travis CI
+    * Elasticsearch, Logstash, Grafana, Nagios, Prometheus
 
 
 Open Source communities
@@ -43,13 +43,23 @@ Languages
 
 ----
 
+### System administrator at MILAB sro.
+
+Period: September 2023 - now
+
+Management of networking infrastructure, server and desktop machines in MILAB
+medical offices.
+\
+\
+
+
 ### Self employed DevOps Engineer
 
 Period: September 2022 - now
 
 Development of networking, server and desktop infrastructure using Nix and
-NixOS. Started Nix Geospatial team, Geonix project and participated in Summer of
-Nix program.
+NixOS. Started Nix Geospatial team, Geospatial NIX project and participated in
+Summer of Nix program.
 \
 
 **Summer of Nix**
@@ -67,13 +77,29 @@ Nix program.
 * Responsibility: design, development and deployment
 * Technologies: NixOS, Nix, Nix Flakes
 
-**Geonix**
+**Geospatial NIX**
 
 * Period: October 2022 - now
 * Description: cross-platform geospatial packages distribution and development environment
 * Responsibility: project founder, design, development
 * Technologies: Nixpkgs, Nix, Nix Flakes
-* URL: https://github.com/imincik/geonix
+* URL: https://github.com/imincik/geospatial-nix
+
+**Geospatial NIX.env**
+
+* Period: October 2022 - now
+* Description: Geospatial NIX environment builder
+* Responsibility: project founder, design, development
+* Technologies: Nixpkgs, Nix, Nix Flakes
+* URL: https://github.com/imincik/geospatial-nix.env
+
+**Geospatial NIX.today**
+
+* Period: October 2022 - now
+* Description: web UI for Geospatial NIX
+* Responsibility: project founder, design, development
+* Technologies: Nixpkgs, Nix, Elm
+* URL: https://github.com/imincik/geospatial-nix.today
 \
 \
 
