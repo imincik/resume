@@ -15,16 +15,17 @@ Education
 
 Technology Stack
 :   
-    * Git, Mercurial, SVN, GitHub 
-    * Make, CMake
-    * GDAL, PROJ, QGIS, PostgreSQL/PostGIS, Django
-    * Python, Nix, Bash, Elm
-    * Debian/Ubuntu, NixOS Linux
-    * Ansible
-    * Amazon Web Services (AWS), Terraform, CDK
-    * Docker, Podman, Nomad, Vagrant, K3S
+    * Git, Mercurial, SVN
+    * Bash, Python, Nix, Elm
+    * GDAL, PROJ, QGIS, GRASS
+    * PostgreSQL, PostGIS, PostgREST, PL/pgSQL
+    * Django, Flask, FastAPI
+    * Debian, Ubuntu, NixOS
+    * Ansible, Nix modules
+    * Amazon Web Services (AWS), CDK, Terraform
+    * Docker, Podman, Nomad, K3S, Vagrant
     * GitHub Actions, Jenkins, Travis CI
-    * Elasticsearch, Logstash, Grafana, Nagios, Prometheus
+    * Elasticsearch, Logstash, Prometheus, Grafana, Nagios
 
 
 Open Source communities
